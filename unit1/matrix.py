@@ -13,9 +13,9 @@ class Matrix(object):
     def getNumberOfRows(self):
         return self._numberOfRows
 
-    numberOfRows = property(fget=lambda self: self.getNumberOfRows())
+    numberOfRows = property(fget=getNumberOfRows)
 
     def getNumberOfColumns(self):
         return self._numberOfColumns
 
-    numberOfColumns = property(fget=lambda self: self.getNumberOfColumns())
+    numberOfColumns = property(fget=getNumberOfColumns)
